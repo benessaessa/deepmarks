@@ -8,8 +8,8 @@
   --white:    #fff;
   --muted:    #7a7a8c;
   --radius:   16px;
-  --font-head: 'Cormorant Garamond', serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-head: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -146,30 +146,6 @@ body::before {
 }
 .hero-sub strong { color: var(--white); font-weight: 500; }
 
-.marquee-wrap {
-  background: rgba(255,255,255,.03);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 18px 0; margin-top: 60px;
-  overflow: hidden;
-}
-.marquee-track {
-  display: flex; gap: 48px; width: max-content;
-  animation: marquee 22s linear infinite;
-}
-.marquee-track:hover { animation-play-state: paused; }
-.marquee-item {
-  font-family: var(--font-head);
-  font-size: 1rem; letter-spacing: .18em; text-transform: uppercase;
-  color: rgba(201,169,110,.55); white-space: nowrap; user-select: none;
-}
-.marquee-sep { color: var(--prim); opacity: .4; }
-@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-
-.about-section {
-  padding: 110px 0;
-  background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
-}
 .stat-box {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -213,7 +189,7 @@ body::before {
 .feature-card p { color: var(--muted); font-size: .93rem; line-height: 1.8; }
 
 .section-process {
-  padding: 60px 0;
+  padding: 10px 0 60px 0;
   background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
 }
 .step-row { display: flex; gap: 24px; align-items: flex-start; }
