@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deepmarks – Contact</title>
+
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-sticky">
+  <div class="container">
+    <a class="navbar-brand nav-logo d-flex align-items-center" href="#">
+      <img src="images/logo.gif" alt="">
+      <span class="text-white">deepmarks</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenuOffcanvas" aria-controls="navMenuOffcanvas">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li> -->
+      </ul>
+      <a href="#cta" class="btn btn-prim ms-lg-3 text-capitalize">Start now</a>
+    </div>
+
+    <!-- Offcanvas (mobile) -->
+    <div class="offcanvas offcanvas-start d-lg-none d-md-block" tabindex="-1" id="navMenuOffcanvas" aria-labelledby="navMenuOffcanvasLabel">
+      <div class="offcanvas-header">
+        <div class="d-flex align-items-center gap-2">
+          <img src="images/logo.gif" alt="" style="width:56px;height:42px;object-fit:cover;">
+          <span id="navMenuOffcanvasLabel" class="text-white fw-semibold">deepmarks</span>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="index.html#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="index.html#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="index.html#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="contact.html">Contact</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="#">Blogs</a></li> -->
+        </ul>
+        <div class="mt-3">
+          <a href="#cta" data-bs-dismiss="offcanvas" class="btn btn-prim w-100 text-capitalize">Start now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- ═══════════════════ CONTACT HERO ═══════════════════ -->
+<section id="contact-hero" class="section-hero" style="min-height: 55vh; padding-top: 110px;">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-8 me-auto text-start">
+        <div class="pill mb-4 reveal">
+          <span class="dot"></span> Contact
+        </div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Let’s build a<br /><em>brand you’ll be proud of</em>.
+        </h1>
+        <p class="hero-sub mx-auto reveal reveal-delay-2">
+          Send us your details and we’ll match you with the right designers. Get clarity, speed, and premium creative output—powered by branding science.
+        </p>
+        <div class="mt-4 reveal reveal-delay-3">
+          <a href="#contact-form" class="btn btn-prim me-3 text-capitalize">Send request <span class="bi bi-arrow-right ms-1" aria-hidden="true"></span></a>
+          <a href="#contact-details" class="btn btn-outline-prim">Our details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ CONTACT CONTENT ═══════════════════ -->
+<section id="contact" class="section-process" style="padding: 70px 0;">
+  <div class="container">
+    <div class="row gy-5">
+      <!-- Form -->
+      <div class="col-lg-7 reveal" id="contact-form">
+        <span class="label-tag">Contact form</span>
+        <h2 class="deepmarks-h2-xl" style="margin-bottom: 12px;">Tell us about your project</h2>
+        <p class="deepmarks-lead muted-tall" style="max-width: 560px;">Share your goals and timeline. We’ll review your request and get back with next steps.</p>
+
+        <form class="mt-4" onsubmit="return false;">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label" style="color: var(--muted);">Your name</label>
+              <input type="text" class="form-control" placeholder="Full name" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" style="color: var(--muted);">Email</label>
+              <input type="email" class="form-control" placeholder="name@email.com" required />
+            </div>
+            <div class="col-12">
+              <label class="form-label" style="color: var(--muted);">Business / brand</label>
+              <input type="text" class="form-control" placeholder="Company or brand name" required />
+            </div>
+            <div class="col-12">
+              <label class="form-label" style="color: var(--muted);">What are you building?</label>
+              <textarea class="form-control" rows="5" placeholder="Describe your project, audience, and desired vibe..." required></textarea>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" style="color: var(--muted);">Budget range</label>
+              <select class="form-select" required>
+                <option value="">Select one</option>
+                <option>Basic</option>
+                <option>Growth</option>
+                <option>Premium</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" style="color: var(--muted);">Timeline</label>
+              <select class="form-select" required>
+                <option value="">Select one</option>
+                <option>ASAP</option>
+                <option>1–2 months</option>
+                <option>3+ months</option>
+              </select>
+            </div>
+            <div class="col-12 d-flex gap-3 align-items-center flex-wrap mt-4">
+              <button type="submit" class="btn btn-prim px-5 text-capitalize">Submit request <span class="deepmarks-arrow ms-2" aria-hidden="true"></span></button>
+              <span style="color: var(--muted); font-size: .9rem;">We usually respond within 1–2 business days.</span>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Details -->
+      <div class="col-lg-5 reveal reveal-delay-2" id="contact-details">
+        <span class="label-tag">Quick details</span>
+        <h2 class="deepmarks-h2-xl" style="margin-bottom: 12px;">Reach Deepmarks</h2>
+        <p class="deepmarks-lead muted-tall">Choose the fastest way to contact us. We’re happy to help with project questions and recommendations.</p>
+
+        <div class="row g-3 mt-1">
+          <div class="col-12">
+            <div class="stat-box" style="text-align:left; padding: 26px 22px;">
+              <div class="stat-num" style="font-size: 1.4rem; color: var(--prim); margin-bottom: 10px; font-family: var(--font-head);">Email</div>
+              <div style="color: var(--white); font-weight: 600;">hello@deepmarks.com</div>
+              <div style="color: var(--muted); font-size: .9rem; margin-top: 6px;">For briefs, partnerships & support</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="stat-box" style="text-align:left; padding: 26px 22px;">
+              <div class="stat-num" style="font-size: 1.4rem; color: var(--prim); margin-bottom: 10px; font-family: var(--font-head);">Hours</div>
+              <div style="color: var(--white); font-weight: 600;">Mon–Fri</div>
+              <div style="color: var(--muted); font-size: .9rem; margin-top: 6px;">9:00 AM – 5:00 PM (local time)</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="stat-box" style="text-align:left; padding: 26px 22px;">
+              <div class="stat-num" style="font-size: 1.4rem; color: var(--prim); margin-bottom: 10px; font-family: var(--font-head);">What to send</div>
+              <ul style="list-style:none; padding:0; margin: 10px 0 0; display:flex; flex-direction:column; gap:10px; color: rgba(240,237,232,.8);">
+                <li><i class="bi bi-check-circle-fill" style="color: var(--prim); margin-right: 10px;"></i> Your brand goals</li>
+                <li><i class="bi bi-check-circle-fill" style="color: var(--prim); margin-right: 10px;"></i> Target audience</li>
+                <li><i class="bi bi-check-circle-fill" style="color: var(--prim); margin-right: 10px;"></i> Timeline + budget range</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-4">
+        <div class="footer-logo">deepmarks</div>
+        <p class="footer-desc">Discover premium branding and visual design solutions tailored to your business vision.</p>
+        <div class="footer-newsletter">
+          <input type="email" placeholder="Your email address" />
+          <button type="button" class="newsletter-btn text-white">Submit</button>
+        </div>
+        <div class="social-links">
+          <a href="https://x.com/Deepmark194898" target="_blank" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@deepmarksai" target="_blank" class="social-btn"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.linkedin.com/company/deep-marks/" target="_blank" class="social-btn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-2">
+        <p class="footer-heading">Pages</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="#">Blogs</a></li> -->
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <p class="footer-heading">Social</p>
+        <ul class="footer-links">
+          <li><a href="https://x.com/Deepmark194898" target="_blank">Twitter (X)</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@deepmarksai" target="_blank">TikTok</a></li>
+          <li><a href="https://www.linkedin.com/company/deep-marks/" target="_blank">LinkedIn</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <p class="footer-heading">Legal</p>
+        <ul class="footer-links">
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="mb-0">© 2026 Deepmarks. All rights reserved.</p>
+      <div class="footer-legal-links">
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // ── Sticky navbar ───────────────────────────────────────────
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // ── Scroll reveal ───────────────────────────────────────────
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // ── Newsletter submit ───────────────────────────────────────
+  document.querySelectorAll('.footer-newsletter button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const input = btn.previousElementSibling;
+      if (input.value.trim()) {
+        btn.textContent = '✓ Sent';
+        btn.classList.add('newsletter-sent');
+        input.value = '';
+        setTimeout(() => {
+          btn.textContent = 'Submit';
+          btn.classList.remove('newsletter-sent');
+        }, 3000);
+      }
+    });
+  });
+
+  // ── Smooth highlight active nav link ───────────────────────
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+    });
+    navLinks.forEach(link => {
+      const isActive = link.getAttribute('href') === `#${current}`;
+      link.classList.toggle('nav-link-active', isActive);
+    });
+  });
+</script>
+</body>
+</html>
+
