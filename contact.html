@@ -45,7 +45,7 @@
     <div class="offcanvas offcanvas-start d-lg-none d-md-block" tabindex="-1" id="navMenuOffcanvas" aria-labelledby="navMenuOffcanvasLabel">
       <div class="offcanvas-header">
         <div class="d-flex align-items-center gap-2">
-          <img src="images/logo.gif" alt="" style="width:56px;height:42px;object-fit:cover;">
+          <img src="images/logo.gif" alt="" class="offcanvas-logo-img">
           <span id="navMenuOffcanvasLabel" class="text-white fw-semibold">deepmarks</span>
         </div>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -70,13 +70,13 @@
 
 
 <!-- ═══════════════════ CONTACT HERO ═══════════════════ -->
-<section id="contact-hero" style="padding-top: 110px;">
+<section id="contact-hero">
   <div class="hero-glow"></div>
   <div class="container">
     <div class="row align-items-center gy-5">
       <div class="col-lg-8 me-auto text-start">
         <div class="pill mb-4 reveal">
-          <span class="dot"></span> Contact
+          <span class="dot"></span> Contact Us
         </div>
       </div>
     </div>
@@ -87,33 +87,33 @@
 <!-- ═══════════════════ CONTACT CONTENT ═══════════════════ -->
 <section id="contact" class="section-process">
   <div class="container">
-    <div class="row gy-5">
+    <div class="row gy-5 pt-4">
       <!-- Form -->
-      <div class="col-lg-7 reveal" id="contact-form">
+      <div class="col-lg-7 reveal contact-us-form" id="contact-form">
         <span class="label-tag">Contact form</span>
-        <h2 class="deepmarks-h2-xl" style="margin-bottom: 12px;">Tell us about your project</h2>
-        <p class="deepmarks-lead muted-tall" style="max-width: 560px;">Share your goals and timeline. We’ll review your request and get back with next steps.</p>
+        <h2 class="deepmarks-h2-xl heading-spacer">Tell us about your project</h2>
+        <p class="deepmarks-lead muted-tall max-width-sm">Share your goals and timeline. We'll review your request and get back with next steps.</p>
 
         <form class="mt-4" onsubmit="return false;">
           <div class="row g-3">
             <div class="col-md-6">
-              <label class="form-label" style="color: var(--muted);">Your name</label>
+              <label class="form-label form-label-muted">Your name</label>
               <input type="text" class="form-control" placeholder="Full name" required />
             </div>
             <div class="col-md-6">
-              <label class="form-label" style="color: var(--muted);">Email</label>
+              <label class="form-label form-label-muted">Email</label>
               <input type="email" class="form-control" placeholder="name@email.com" required />
             </div>
             <div class="col-12">
-              <label class="form-label" style="color: var(--muted);">Business / brand</label>
+              <label class="form-label form-label-muted">Business / brand</label>
               <input type="text" class="form-control" placeholder="Company or brand name" required />
             </div>
             <div class="col-12">
-              <label class="form-label" style="color: var(--muted);">What are you building?</label>
+              <label class="form-label form-label-muted">What are you building?</label>
               <textarea class="form-control" rows="5" placeholder="Describe your project, audience, and desired vibe..." required></textarea>
             </div>
             <div class="col-md-6">
-              <label class="form-label" style="color: var(--muted);">Budget range</label>
+              <label class="form-label form-label-muted">Budget range</label>
               <select class="form-select" required>
                 <option value="">Select one</option>
                 <option>Basic</option>
@@ -122,7 +122,7 @@
               </select>
             </div>
             <div class="col-md-6">
-              <label class="form-label" style="color: var(--muted);">Timeline</label>
+              <label class="form-label form-label-muted">Timeline</label>
               <select class="form-select" required>
                 <option value="">Select one</option>
                 <option>ASAP</option>
@@ -132,7 +132,7 @@
             </div>
             <div class="col-12 d-flex gap-3 align-items-center flex-wrap mt-4">
               <button type="submit" class="btn btn-prim px-5 text-capitalize">Submit request <span class="deepmarks-arrow ms-2" aria-hidden="true"></span></button>
-              <span style="color: var(--muted); font-size: .9rem;">We usually respond within 1–2 business days.</span>
+              <span class="form-note">We usually respond within 1–2 business days.</span>
             </div>
           </div>
         </form>
@@ -141,31 +141,31 @@
       <!-- Details -->
       <div class="col-lg-5 reveal reveal-delay-2" id="contact-details">
         <span class="label-tag">Quick details</span>
-        <h2 class="deepmarks-h2-xl" style="margin-bottom: 12px;">Reach Deepmarks</h2>
+        <h2 class="deepmarks-h2-xl heading-spacer">Reach Deepmarks</h2>
         <p class="deepmarks-lead muted-tall">Choose the fastest way to contact us. We’re happy to help with project questions and recommendations.</p>
 
         <div class="row g-3 mt-1">
           <div class="col-12">
-            <div class="stat-box" style="text-align:left; padding: 26px 22px;">
-              <div class="stat-num" style="font-size: 1.4rem; color: var(--prim); margin-bottom: 10px; font-family: var(--font-head);">Email</div>
-              <div style="color: var(--white); font-weight: 600;">hello@deepmarks.com</div>
-              <div style="color: var(--muted); font-size: .9rem; margin-top: 6px;">For briefs, partnerships & support</div>
+            <div class="stat-box-left">
+              <div class="stat-box-sm-title">Email</div>
+              <div class="stat-box-value">hello@deepmarks.com</div>
+              <div class="stat-box-desc">For briefs, partnerships & support</div>
             </div>
           </div>
           <div class="col-12">
-            <div class="stat-box" style="text-align:left; padding: 26px 22px;">
-              <div class="stat-num" style="font-size: 1.4rem; color: var(--prim); margin-bottom: 10px; font-family: var(--font-head);">Hours</div>
-              <div style="color: var(--white); font-weight: 600;">Mon–Fri</div>
-              <div style="color: var(--muted); font-size: .9rem; margin-top: 6px;">9:00 AM – 5:00 PM (local time)</div>
+            <div class="stat-box-left">
+              <div class="stat-box-sm-title">Hours</div>
+              <div class="stat-box-value">Mon–Fri</div>
+              <div class="stat-box-desc">9:00 AM – 5:00 PM (local time)</div>
             </div>
           </div>
           <div class="col-12">
-            <div class="stat-box" style="text-align:left; padding: 26px 22px;">
-              <div class="stat-num" style="font-size: 1.4rem; color: var(--prim); margin-bottom: 10px; font-family: var(--font-head);">What to send</div>
-              <ul style="list-style:none; padding:0; margin: 10px 0 0; display:flex; flex-direction:column; gap:10px; color: rgba(240,237,232,.8);">
-                <li><i class="bi bi-check-circle-fill" style="color: var(--prim); margin-right: 10px;"></i> Your brand goals</li>
-                <li><i class="bi bi-check-circle-fill" style="color: var(--prim); margin-right: 10px;"></i> Target audience</li>
-                <li><i class="bi bi-check-circle-fill" style="color: var(--prim); margin-right: 10px;"></i> Timeline + budget range</li>
+            <div class="stat-box-left">
+              <div class="stat-box-sm-title pb-3">What to send</div>
+              <ul class="stat-checklist">
+                <li class="stat-checklist-item"><i class="bi bi-check-circle-fill"></i> Your brand goals</li>
+                <li class="stat-checklist-item"><i class="bi bi-check-circle-fill"></i> Target audience</li>
+                <li class="stat-checklist-item"><i class="bi bi-check-circle-fill"></i> Timeline + budget range</li>
               </ul>
             </div>
           </div>
