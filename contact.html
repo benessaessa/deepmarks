@@ -87,55 +87,57 @@
 <!-- ═══════════════════ CONTACT CONTENT ═══════════════════ -->
 <section id="contact" class="section-process">
   <div class="container">
-    <div class="row gy-5 pt-4">
+    <div class="row gy-5 pt-lg-4">
       <!-- Form -->
-      <div class="col-lg-7 reveal contact-us-form" id="contact-form">
-        <span class="label-tag">Contact form</span>
-        <h2 class="deepmarks-h2-xl heading-spacer">Tell us about your project</h2>
-        <p class="deepmarks-lead muted-tall max-width-sm">Share your goals and timeline. We'll review your request and get back with next steps.</p>
-
-        <form class="mt-4" onsubmit="return false;">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label form-label-muted">Your name</label>
-              <input type="text" class="form-control" placeholder="Full name" required />
+      <div class="col-lg-7 reveal" id="contact-form">
+        <div class="contact-us-form">
+          <span class="label-tag">Contact form</span>
+          <h2 class="deepmarks-h2-xl heading-spacer">Tell us about your project</h2>
+          <p class="deepmarks-lead muted-tall max-width-sm">Share your goals and timeline. We'll review your request and get back with next steps.</p>
+  
+          <form class="mt-4" onsubmit="return false;">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label form-label-muted">Your name</label>
+                <input type="text" class="form-control" placeholder="Full name" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-muted">Email</label>
+                <input type="email" class="form-control" placeholder="name@email.com" required />
+              </div>
+              <div class="col-12">
+                <label class="form-label form-label-muted">Business / brand</label>
+                <input type="text" class="form-control" placeholder="Company or brand name" required />
+              </div>
+              <div class="col-12">
+                <label class="form-label form-label-muted">What are you building?</label>
+                <textarea class="form-control" rows="5" placeholder="Describe your project, audience, and desired vibe..." required></textarea>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-muted">Budget range</label>
+                <select class="form-select" required>
+                  <option value="">Select one</option>
+                  <option>Basic</option>
+                  <option>Growth</option>
+                  <option>Premium</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-muted">Timeline</label>
+                <select class="form-select" required>
+                  <option value="">Select one</option>
+                  <option>ASAP</option>
+                  <option>1–2 months</option>
+                  <option>3+ months</option>
+                </select>
+              </div>
+              <div class="col-12 d-flex gap-3 align-items-center flex-wrap mt-4">
+                <button type="submit" class="btn btn-prim px-5 text-capitalize">Submit request <span class="deepmarks-arrow ms-2" aria-hidden="true"></span></button>
+                <span class="form-note">We usually respond within 1–2 business days.</span>
+              </div>
             </div>
-            <div class="col-md-6">
-              <label class="form-label form-label-muted">Email</label>
-              <input type="email" class="form-control" placeholder="name@email.com" required />
-            </div>
-            <div class="col-12">
-              <label class="form-label form-label-muted">Business / brand</label>
-              <input type="text" class="form-control" placeholder="Company or brand name" required />
-            </div>
-            <div class="col-12">
-              <label class="form-label form-label-muted">What are you building?</label>
-              <textarea class="form-control" rows="5" placeholder="Describe your project, audience, and desired vibe..." required></textarea>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label form-label-muted">Budget range</label>
-              <select class="form-select" required>
-                <option value="">Select one</option>
-                <option>Basic</option>
-                <option>Growth</option>
-                <option>Premium</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label form-label-muted">Timeline</label>
-              <select class="form-select" required>
-                <option value="">Select one</option>
-                <option>ASAP</option>
-                <option>1–2 months</option>
-                <option>3+ months</option>
-              </select>
-            </div>
-            <div class="col-12 d-flex gap-3 align-items-center flex-wrap mt-4">
-              <button type="submit" class="btn btn-prim px-5 text-capitalize">Submit request <span class="deepmarks-arrow ms-2" aria-hidden="true"></span></button>
-              <span class="form-note">We usually respond within 1–2 business days.</span>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
 
       <!-- Details -->

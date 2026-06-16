@@ -168,7 +168,7 @@ body::before {
 }
 .stat-label { font-size: .8rem; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; margin-top: 6px; }
 
-.section-features { padding: 110px 0; }
+.section-features { padding: 50px 0; }
 .feature-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -217,18 +217,20 @@ body::before {
   background: linear-gradient(180deg, rgba(201,169,110,.3), transparent);
   margin: 8px 0 8px 24px;
 }
-
 .section-portfolio {
-  padding: 60px 0;
+  padding: 50px 0;
   background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
 }
 .portfolio-card {
+  display: block;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 20px;
   overflow: hidden;
   transition: transform .3s, border-color .3s;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
 .portfolio-card:hover { transform: translateY(-6px); border-color: rgba(201,169,110,.4); }
 .portfolio-img {
@@ -253,6 +255,14 @@ body::before {
   transition: gap .2s;
 }
 .portfolio-card:hover .portfolio-arrow { gap: 10px; }
+
+/* Portfolio author footer */
+.portfolio-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; }
+.author-info { display: flex; align-items: center; gap: 12px; }
+.author-avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); }
+.author-name { font-weight: 700; font-size: .95rem; color: var(--white); }
+.author-position { color: var(--muted); font-size: .85rem; }
+.author-badge { width: 44px; height: 44px; border-radius: 50%; background: var(--prim); color: var(--white); display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: .85rem; }
 
 .section-pricing { padding: 60px 0; }
 .pricing-card {
@@ -486,3 +496,11 @@ footer-bottom a:hover { color: var(--prim); }
   #hero { padding-top: 110px; }
 }
 
+@media (max-width: 991px) {
+  .items-scroll-row {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+  }
+}
